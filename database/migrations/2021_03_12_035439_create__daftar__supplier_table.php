@@ -15,11 +15,10 @@ class CreateDaftarSupplierTable extends Migration
     public function up()
     {
         Schema::create('_daftar__supplier', function (Blueprint $table) {
-            $table->increments('Id_pegawai');
-            $table->String('nama_pegawai',100);
-            $table->char('Tempat_tgl_lahir',200);
+            $table->increments('Id_suplier');
+            $table->String('nama_supplier',100);
             $table->char('no_tlpn',50);
-            $table->text('alamat_pegawai');
+            $table->text('alamat_supplier');
     });
 }
 
