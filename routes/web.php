@@ -20,3 +20,8 @@ Route::get('/about', [MainController::class, 'about']);
 Route::get('/blog', [MainController::class, 'blog']);
 Route::get('/contact', [MainController::class, 'contact']);
 Route::get('/welcome', [MainController::class, 'welcome']);
+
+route::get('/barang', [MainController::class, 'barang']);
+route::get('/pegawai', [MainController::class, 'pegawai']);
+route::get('/pelanggan', [MainController::class, 'pelanggan']);
+route::get('/suplier', [MainController::class, 'suplier']);

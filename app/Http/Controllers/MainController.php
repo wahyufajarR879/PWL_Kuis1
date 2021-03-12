@@ -16,5 +16,13 @@ class MainController extends Controller
         return view('contact');
     }public function welcome(){
         return view('welcome');
+    }public function barang(){
+        return view('DaftarBarang');
+    }public function pegawai(){
+        return view('DaftarPegawai');
+    }public function pelanggan(){
+        return view('DaftarPelanggan');
+    }public function suplier(){
+        return view('DaftarSuplier');
     }
 }

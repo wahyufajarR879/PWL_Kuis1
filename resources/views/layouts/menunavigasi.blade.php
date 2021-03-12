@@ -19,6 +19,18 @@
             <li class="nav-item">
                 <a href="contact" class="nav-link">Contact</a>
             </li>
+            <li class="nav-item">
+                <a href="barang" class="nav-link">Daftar Barang</a>
+            </li>
+            <li class="nav-item">
+                <a href="pegawai" class="nav-link">Daftar Pegawai</a>
+            </li>
+            <li class="nav-item">
+                <a href="pelanggan" class="nav-link">Daftar Pelanggan</a>
+            </li>
+            <li class="nav-item">
+                <a href="suplier" class="nav-link">Daftar Suplier</a>
+            </li>
         </ul>
     </div>
 
