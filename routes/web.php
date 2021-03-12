@@ -15,6 +15,7 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/', [MainController::class, 'index']);
+Route::get('/index', [MainController::class, 'index']);
 Route::get('/about', [MainController::class, 'about']);
 Route::get('/blog', [MainController::class, 'blog']);
 Route::get('/contact', [MainController::class, 'contact']);
