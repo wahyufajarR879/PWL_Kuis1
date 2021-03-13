@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class SupplierSeeder extends Seeder
 {
@@ -13,10 +14,10 @@ class SupplierSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('_daftar_supplier')->insert([
-        	'Id_supplier' => '101',
+        DB::table('_daftar__supplier')->insert([
+        	'Id_suplier' => '101',
         	'nama_supplier' => 'PWL',
-            'no_telpn' => '061248',
+            'no_tlpn' => '061248',
             'alamat_supplier' => 'banyuwangi'
 
         ]);

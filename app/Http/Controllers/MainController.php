@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\_daftar_barang;
+use App\Models\pwl_kuis_1;
 
 class MainController extends Controller
 {
@@ -17,12 +19,17 @@ class MainController extends Controller
     }public function welcome(){
         return view('welcome');
     }public function barang(){
-        return view('DaftarBarang');
+        // return _daftar_barang::all();
+        $data=pwl_kuis_1::all();
+        return view('DaftarBarang',['blog'=>$data]);
     }public function pegawai(){
-        return view('DaftarPegawai');
+        $data=pwl_kuis_1::all();
+        return view('DaftarPegawai',['blog'=>$data]);
     }public function pelanggan(){
-        return view('DaftarPelanggan');
+        $data=pwl_kuis_1::all();
+        return view('DaftarPelanggan',['blog'=>$data]);
     }public function suplier(){
-        return view('DaftarSuplier');
+        $data=pwl_kuis_1::all();
+        return view('DaftarSuplier',['blog'=>$data]);
     }
 }
