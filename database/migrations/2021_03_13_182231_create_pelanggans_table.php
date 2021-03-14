@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDaftarBarangsTable extends Migration
+class CreatePelanggansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateDaftarBarangsTable extends Migration
      */
     public function up()
     {
-        Schema::create('_daftar_barangs', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('pelanggans', function (Blueprint $table) {
+            $table->increments('Id_pelanggan');
+            $table->String('nama_pelanggan',100);
+            $table->text('alamat_pelanggan');
         });
     }
 
@@ -26,6 +27,6 @@ class CreateDaftarBarangsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_daftar_barangs');
+        Schema::dropIfExists('pelanggans');
     }
 }

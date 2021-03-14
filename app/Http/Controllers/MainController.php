@@ -19,17 +19,17 @@ class MainController extends Controller
     }public function welcome(){
         return view('welcome');
     }public function barang(){
-        // return _daftar_barang::all();
-        $data=pwl_kuis_1::all();
-        return view('DaftarBarang',['blog'=>$data]);
-    }public function pegawai(){
-        $data=pwl_kuis_1::all();
-        return view('DaftarPegawai',['blog'=>$data]);
-    }public function pelanggan(){
-        $data=pwl_kuis_1::all();
-        return view('DaftarPelanggan',['blog'=>$data]);
-    }public function suplier(){
-        $data=pwl_kuis_1::all();
-        return view('DaftarSuplier',['blog'=>$data]);
-    }
-}
+//         return _daftar__barangs::all();
+//         $data=pwl_kuis_1::all();
+//         return view('DaftarBarang',['blog'=>$data]);
+//     }public function pegawai(){
+//         $data=pwl_kuis_1::all();
+//         return view('DaftarPegawai',['blog'=>$data]);
+//     }public function pelanggan(){
+//         $data=pwl_kuis_1::all();
+//         return view('DaftarPelanggan',['blog'=>$data]);
+//     }public function suplier(){
+//         $data=pwl_kuis_1::all();
+//         return view('DaftarSuplier',['blog'=>$data]);
+     }
+ };

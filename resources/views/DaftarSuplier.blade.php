@@ -59,7 +59,7 @@ http://www.templatemo.com/tm-488-classic
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($blog as $b)
+                                    @foreach($supplier as $b)
                                     <tr>
                                         <td>{{$b->Id_suplier}}</td>
                                         <td>{{$b->nama_supplier}}</td>

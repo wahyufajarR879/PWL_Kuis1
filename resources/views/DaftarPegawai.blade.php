@@ -60,7 +60,7 @@ http://www.templatemo.com/tm-488-classic
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($blog as $b)
+                                    @foreach($pegawai as $b)
                                     <tr>
                                         <td>{{$b->Id_pegawai}}</td>
                                         <td>{{$b->nama_pegawai}}</td>

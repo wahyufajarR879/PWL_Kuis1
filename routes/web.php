@@ -21,7 +21,7 @@ Route::get('/blog', [MainController::class, 'blog']);
 Route::get('/contact', [MainController::class, 'contact']);
 Route::get('/welcome', [MainController::class, 'welcome']);
 
-route::get('/barang', [MainController::class, 'barang']);
-route::get('/pegawai', [MainController::class, 'pegawai']);
-route::get('/pelanggan', [MainController::class, 'pelanggan']);
-route::get('/suplier', [MainController::class, 'suplier']);
+Route::get('/barang', [App\Http\Controllers\barangController::class, 'index']);
+Route::get('/pelanggan', [App\Http\Controllers\pelangganController::class, 'index']);
+Route::get('/pegawai', [App\Http\Controllers\pegawaiController::class, 'index']);
+Route::get('/supplier', [App\Http\Controllers\supplierController::class, 'index']);

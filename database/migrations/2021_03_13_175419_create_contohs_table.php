@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePwlKuis1sTable extends Migration
+class CreateContohsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePwlKuis1sTable extends Migration
      */
     public function up()
     {
-        Schema::create('pwl_kuis_1s', function (Blueprint $table) {
+        Schema::create('contohs', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreatePwlKuis1sTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pwl_kuis_1s');
+        Schema::dropIfExists('contohs');
     }
 }

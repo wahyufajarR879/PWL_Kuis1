@@ -14,12 +14,14 @@ class SupplierSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('_daftar__supplier')->insert([
-        	'Id_suplier' => '101',
-        	'nama_supplier' => 'PWL',
-            'no_tlpn' => '061248',
-            'alamat_supplier' => 'banyuwangi'
-
-        ]);
+        $data = [
+            [
+                    'Id_suplier' => '101',
+        	        'nama_supplier' => 'PWL',
+                    'no_tlpn' => '061248',
+                    'alamat_supplier' => 'banyuwangi'
+            ],        
+        ];
+        DB::table('suppliers')->insert($data);
     }
 }
